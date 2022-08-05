@@ -1,0 +1,87 @@
+date-23/7/2022
+pritnln is a Method present in PrintStream Class
+
+Getting input from user:
+1.scanner
+2.bufferReader- Integer.ParseInt throws NumberFormatException,IOException
+			  -we have to pass InputStreamReader obj to BufferReader obj
+If u have multiple classes in file the file name should be same as PUBLIC class name
+
+conditional statements:
+if else
+if else ladder :else if after if
+if else nested:if inside if or else
+
+que:1.accept age from user check he/she is eligible for license or not
+2.accept no from user and check wether it is even or odd
+3.accept 3 no from user and disply greatest no
+4.accept a no from user and check wether it is +ve,-ve,0
+5.accept marks of 3 subject and cal total, percentage and grade
+6.accept salary of person and print taxAmount,tax is 10% if income is less than 25000 otherwise 15%
+7.accept perchase amount from the user and print discount amount 10% discount on purchase if amount is >=10000,otherwise 2% discount
+8.accept no of calls from user and print bill amount .rupees 1/call charged if no of calls less than 200,otherwise rupees 3/call
+
+date:26-7-2022
+Switch case:menu driven program
+switch(choise){
+case 1:statements;
+	break;
+	.
+	.
+	.
+	case n:staements;
+	break;
+	.
+	default:
+}
+
+choise:int,char ,String
+
+loops:
+for loop-if u know the range go with for loop
+while loop-entry control loop
+do while loop-exit controlled loop,will execute atleast once
+
+1.calculate sum  of digit
+2.palindrome no
+3.armstrong no
+
+break-break the loop or get out from loop
+continue-skip the current iteration and continue with next
+
+Different Methods to Set Precision in Double Values
+1.Using format() Method of String class
+2.Using round() method of Math class
+ ............DecimalFormat df = new DecimalFormat("#.##");
+ .............System.out.print(" = " + df.format(sum));    //3.14
+
+ date:28-7-2022
+ home work:
+7.	1 4 9 16 25 ....n
+8.	1*2 + 2*3 + 3*4 + ... 15*16 = ?
+9.	1-2+3-4+5-6... n = ?
+10.	1/1! + 2/2! +  ... + n/n! = ?
+ 
+ Array:collection of similar data types,it has fixed size
+ initialization:
+ dataType arrayName[] ={value1,value2,.....valuen};
+ int a[]={2,3,4,5};
+ declaration:
+ dataType arrayName[]=new dataType[size];
+ int a[]=new int[5];
+ 
+ que:
+ 1.accept array elements from user and calculate sum of all array elements
+ 2.accept array elents from user and print only even elements
+ 3.accept array elements from user and cal sum of even and product of odd elements
+ 4.accept array elents from user and display frequency of +,-,and 0s
+ 5.accept array elements from user and display frequency of even and odd elemnts
+ 6.accept array elements from user and cal average of even and odd seperatly on the scrren
+ 7.accept array elements from user and display highest and lowest element
+ 
+ 
+ date:29-7-2022
+ multi diamentional array
+ 
+ 
+ 

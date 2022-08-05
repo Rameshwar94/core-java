@@ -1,0 +1,41 @@
+String:
+
+-immutable(not modifiable) class present in java.lang.* package
+-it implements Serializable,comparable and charSequence interface
+-string is a sequence of characters
+
+-there are two ways to create string:
+1.using String Literal:
+-it will we stored inside String constant pool
+String s1="welcome";
+String s2="welcome";
+-Each time u create a string literal,jvm checks string constant pool first.
+if the string alraedy exist in the pool a ref to the pooled instance is returned
+if string does not exist in the pool a new string instance is created and placed in the pool.
+it makes our program memory efficient
+
+2.Using new Keyword:it will store in heap memory
+  String str=new String("hello");
+
+methods of String:
+1.charAt();
+2.length();
+3.subString(start index,end Index);//start index is inclussive,end index is exclussive
+4.equals();//check contents of string
+5.equalsIgnoreCase();
+6.isEmpaty();
+7.cotains();
+8.indexOf();
+9.concat();
+10.replace();
+11.trim();
+12.split();
+
+questions:
+1.program to check wether given string is palindrome or not
+2.program to remove given char from string
+3.program to count no of words in a string
+4.program to count no of owels and consonant in a string
+5.program to find out largest and smallest word in the string
+6.program to find the frequency of char from the string
+7.program to determine wether to strings are anagrams or not

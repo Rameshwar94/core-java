@@ -1,0 +1,55 @@
+why main method is static in java?
+can we write static public void main instead of public static void main?
+can we change return type of main method? like int/double?
+which is better scanner or bufferReader?and Why?
+can we make a class as private or protected?-no,class may be public or default.
+
+
+Question TO Ask:
+why are we passing string array argument? can we pass any other argument?
+If String array is mandatory then what is reason behind it, why we can pass any other data type instead of String array?
+i.e. what is benefit of String array argument for main method?
+
+
+
+
+
+
+
+
+
+
+what is class ?
+what is object?
+what are the advantages of methods?
+what is constructor?
+what is difference between method and constructor?
+what is method overloading?
+what is method overriding?
+what is difference between overloading and method overriding?
+what is this keyword?
+what is this constructor?
+what is super keyword and super constructor?
+what is difference between this and super keyword?
+what is difference between this constructor and super constructor?
+what is difference between super constructor and super keyword?
+what is diff between has a and is a relationship?
+what is inheritance?and explain its types.
+why java does not support multiple inheritance?
+what is final keyword?
+what is static keyword?
+can we use this and super keyword in static context?
+can we execute a program without main()?
+
+
+
+date:5/8/2022
+what is package and sub package?
+which is default package of java------ans.java.lang
+can we import same package twice?-----ans.yes
+though string is class why we dont import package?----ans.because it is in default package of java
+can i write package stmt after import stmt?------ans.No
+what is difference between protected and default?
+what is difference between string and string buffer
+what is difference between stringbuffer and stringBuilder
+how to create a string?

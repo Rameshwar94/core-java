@@ -1,0 +1,221 @@
+class:
+class is blueprint of object
+
+object:
+object is an instance of class
+it has state and behaviour
+
+method:
+1.library methods 2.user defined
+
+advantages of method:
+1.code Reuseability
+2.better seperation of code
+3.easy to maintain
+
+types:
+1.static method
+2.parameterised method
+3.default(with or without return type)
+4.final
+
+Types of variable:
+1.Instance variable:inside class outside main method
+can accessed in any non static method i.e can not use in main method
+2.local 
+3.Static
+
+date:1/8/2022
+mock
+
+date :2/8/2022
+method overloading(compile time polymorphism):
+same method name having different parameters
+
+constructor-used to initialize the data members
+-same name as class name
+-it does not return any value
+-constructor will call at the time of object creation
+-it has access specifiers
+-type:
+1.default
+2.paramerterised
+
+Que:constructor practice
+1.Calculate simple interest
+2.Calculate area of triangle
+3.Create class Student with id,name and marks of 3 subjects and calculate percentage
+4.create class Employee with id,name,workingDays,perDay salary and calculate salary
+
+this constructor:used to call constructor from same class
+it must be called at first line of default constructor
+
+home work:
+1.In a car racing video game, the car is an object.
+ You can drive the car, turn the car, or stop the car when needed but you need to drive long. 
+You will get money according to the Km you have travelled. 
+For example if you have travelled 123 km then the product of the km (ie 1*2*3 = 6) would be the amount you win.
+ Write a program to find the product of the digits in the given input number.
+ Include a function named productDigits that accepts an integer argument and
+  returns an integer that corresponds to the product of digits in the integer.
+The function returns -1 if the input number is negative or greater than 32767.
+ If the function returns -1, print Invalid Input.
+ Input and Output Format:
+Input consists of an integer.
+Output consists of an integer.
+Refer sample output for formatting specifications.
+ Sample Input 1:
+32
+Sample Output 1:
+6
+ Sample Input 2:
+-67
+Sample Output 2:
+Invalid Input
+
+2.Write a program to convert given temperature from Fahrenheit to Centigrade.
+Formula:
+C/5 = (F-32)/9
+C stands for Centigrade.
+F stands for Fahrenheit.
+ Include a function named convertToCentigrade that accepts 
+ an integer argument and returns a float that corresponds to the centigrade equivalent.
+ If the input is a negative number, print Invalid Input and terminate the program.
+ Input and Output Format:
+Input consists of a single integer.
+Output consists of a floating point number that corresponds to the centigrade equivalent.
+ The output is displayed correct to 2 decimal places.
+Sample Input 1:
+77
+ Sample Output 1:
+25.00
+Sample Input 2:
+-2345
+Sample Output 2:
+Invalid Input
+
+
+Date:3/08/2022
+
+HAS-A Relationship(Aggregation/Containment):
+-relationship between entity and its property
+ex:entity:person
+properties:address,id,name ,dob
+address:addressLine,street,city,state,pincode
+dob:dd,mm,yy
+Is-A Relationship(Inheritance):
+-relationship between different entities
+ex:person:id,name,email,address
+employee:id,name,email,address
+employee is a person----is a relation
+employee has a address-----has a relationship
+
+inheritance:
+person<=student
+super constructor must be the first statement in child class contructor
+
+Method overloading can be achieved  in the same class
+
+method overloading:
+-same name with same parameters
+-it can be achieved in parent child relationship
+
+types of Inheritance :
+java supports only 3 types through class:
+1.single level
+2.multilevel
+3.Hierarchical
+-Because of compiler ambiguity java does not support multiple inheritance through class
+
+multiple Inheritance can be achieved through interface
+
+date:4/08/2022
+Q.1
+Person(id,name,dob) <- Employee(workingDays,perDay,salary) <- SalesPerson(sales,commission)
+
+if sale 95% then commission 20% of salary
+		90% then commission 15% of salary
+		80% then commission 10% of salary
+		75% then commission 5% of salary
+		
+		calculate commission and total salary
+Q.1
+Person(id,name,dob) <- Employee(workingDays,perDay,salary) <- SalesPerson(sales,commission)
+
+if sale 95% then commission 20% of salary
+		90% then commission 15% of salary
+		80% then commission 10% of salary
+		75% then commission 5% of salary
+		
+		calculate commission and total salary
+
+Q.
+2. Person <- Customer(prodName,quantity, price, billAmount) <- Discount 
+
+	if billAmount is 20000 or greater than then 15% discount on billAmount
+				15000 or more then 10% discount on billAmount
+				10000 or more then 7% discount on billAmount
+				below 10000 no discount.
+				
+	calculate discount and final bill.
+
+
+Q.
+Read the question carefully and follow the input and output format.
+
+In a given input number , find out the factorial of each individual digit and assign it to output array.
+
+Input and Output Format:
+Input consists of a single integer. Output consists of an Integer array, the individual factorials.
+
+Print "Number too large" when the given input numbers is greater than 32767 .
+Print "Number too small" when the given input is a negative number.
+
+Include a function named digitFactorial(int number) whose return type is void.
+The output array is stored in a global variable named factorial.
+
+Sample Input 1:
+123
+
+Sample Output 1:
+1
+2
+6
+
+
+Sample Input 2:
+-2526
+
+Sample Output 2:
+Number too small
+
+
+date:5/08/2022
+package:it is collection of similar type of classes,interfaces,sub classes
+-you need to import sub packages explicitly
+ex:
+p1-Abc
+p2-p3-Xyz
+
+package p1
+import p2.p3.*;   //.* only classes are imported not sub packages thats why we need to import sub package explicitly
+class Abc{
+......
+}
+
+-java lang is the default package
+Access specifiers:
+1.private
+2.public
+3.default
+4.protected
+
+
+
+
+
+
+
+
+
+

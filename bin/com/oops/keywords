@@ -1,0 +1,19 @@
+date:4/8/2022
+final and static
+
+final keyword:-can be used with variable ,method and class
+1.final variable:
+-can not change the value
+ex:college name for students
+
+2.final method:
+-can not be  overridden(method can be inherited)
+
+3.final class:
+-can not be inherited
+
+static keyword:-can be used with variable ,method,block,inner class
+
+static variable:
+-are used to refer the common property of all objects.
+-
