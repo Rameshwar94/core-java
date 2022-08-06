@@ -3,8 +3,8 @@ package com.oops;
 import java.util.Scanner;
 
 public class FactOfEachDigit {
-	int count = 1;
-	int fact1 = 1;
+	int count = 0;
+	int fact1 ;
 
 	public void digitFactorial(int a) {
 		int k = a;
@@ -15,7 +15,7 @@ public class FactOfEachDigit {
 		}
 		System.out.println("count:" + (count - 1));
 		int factorial[] = new int[count];
-		int cnt = 1;
+		int cnt = 0;
 		while (a > 0) {
 			int m = a % 10;
 			int fact = 1;
@@ -28,7 +28,7 @@ public class FactOfEachDigit {
 			cnt++;
 		}
 		System.out.println("Factorial of all digit from entered number: "+n);
-		for (int x = factorial.length - 1; x > 0; x--) {
+		for (int x = factorial.length - 1; x >= 0; x--) {
 			System.out.print(factorial[x]+ "\t");
 		}
 	}

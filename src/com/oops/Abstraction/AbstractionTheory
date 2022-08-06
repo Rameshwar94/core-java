@@ -1,0 +1,33 @@
+date:6/8/2022
+Abstraction:abstraction lets you focus on what the object does instead of how it does it
+-There are two ways to achieve abstraction:
+1.Abstract Class  2.Interface
+
+Abstract method:
+-A method that is declared as abstract and does not have implementation in abstract class is known as abstract method
+
+Abstract Class:
+-Abstract class needs to extended and its method implementation
+-it can not be instantiated
+-you can insert constructor,abstract method or non abstract(concrete method) or combination of both
+If you are extending any abstract class that have abstract method,you must either provide the implementation or make this class as abstract
+if there is any abstract method in a class,that class must be abstract
+
+Interface:
+-it is blueprint of a class
+-it has static constant(public static final)and abstract method(public abstract)
+-since java8 u can insert static and default method
+-it represent is a relationship
+-it can not be instantiated just like abstract class
+-it is a mechanism to achieve Abstraction
+-it supports the functionality of multiple interface
+-it is used to achieve loose coupling
+
+interface inerface_nme{
+variable;//public static final(compiler will take it by default)
+method;//public abstract
+}
+
+class --extends--class
+class--implements--interface
+interface--extends --interface

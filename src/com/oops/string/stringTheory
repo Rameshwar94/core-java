@@ -39,3 +39,7 @@ questions:
 5.program to find out largest and smallest word in the string
 6.program to find the frequency of char from the string
 7.program to determine wether to strings are anagrams or not
+
+date:6/8/2022
+StringBuffer
+StringBuilder
