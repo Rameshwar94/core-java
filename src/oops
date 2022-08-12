@@ -211,11 +211,65 @@ Access specifiers:
 4.protected
 
 
+date:9/8/2022
+Object Class:
+-Object class is the parent class of all the classes in java by default.
+it means Object is the topmost class of java
+-it is beneficial if u want to refer any object whose type you don't know.
+-parent class reference variable can be refer the child class object,known as upcasting
+ex.Person p=new Student();
 
 
+Methods of Object class:
+1.public final Class getClass();-->returns the Class class object of this object.
+2.public hashCode();-->returns the hashCode number of the object
+3.public boolean equals(Object obj);-->compares the given object
+4.protected Object clone() throws cloneNotSupportedexception;-->creates and return the exact copy of object
+-java.lang.Cloneable interface must be implemented by the class whose object clone we want to create
+-if we don't 
+
+5.public String toString();-->returns the string representation of the object
+6.protected void finalize();-->used before garbage collection for cleanup processing
+7.public final void notify();
+8.public final void notifyAll(); 
+
+date:10/11/2022
+Wrapper Classes:
 
 
+/
+date:12/8/2022
+q.John is working in a bank. He has created account details transaction in a file and protected it with a password. He sent the file to his manager for review. 
+The file is protected with a password. The password is the sum of Prime numbers. Write a function to generate the password.
 
+Input and Output Format:
+First line of input consists of n, the number of elements. Next n lines correspond to the array elements. Output consist of an integer, which is the sum.
+
+1) Print "Invalid array size" when size of the array is a negative number and terminate the program.
+2) Print "Invalid input" when there is any negative number available in the input array and terminate the program.
+3) Print 0, when there are no prime numbers in a given input array.
+
+Include a function named sumPrimeArray(int array[], int size) whose return type is an integer, which is the prime sum.
+
+Sample Input 1:
+5
+1
+2
+3
+4
+5
+
+Sample Output 1:
+10
+
+Sample Input 2:
+3
+4
+8
+9
+
+Sample Output 2:
+0
 
 
 

@@ -19,13 +19,26 @@ i.e. what is benefit of String array argument for main method?
 
 
 
-what is class ?
-what is object?
+what is class ?->blueprint or template to create obj
+what is object?->it is physical entity it has state(variables) and behavoiur(methods)
 what are the advantages of methods?
+ans.It makes the program well structured.
+Methods enhance the readability of the code.
+It provides an effective way for the user to reuse the existing code.
+It optimizes the execution time and memory space.
+
 what is constructor?
+ans.A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created.
+A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created.
+
 what is difference between method and constructor?
+ans.Constructor is called implicitly by system.A method is called by the programmer.
+constructor has no return type. It can or cannot return any value to the caller.method has return type
+
 what is method overloading?
 what is method overriding?
+ans .occurs when a subclass (child class) has the same method as the parent class.
+
 what is difference between overloading and method overriding?
 what is this keyword?
 what is this constructor?
@@ -51,5 +64,57 @@ though string is class why we dont import package?----ans.because it is in defau
 can i write package stmt after import stmt?------ans.No
 what is difference between protected and default?
 what is difference between string and string buffer
-what is difference between stringbuffer and stringBuilder
+what is difference between stringBuffer and stringBuilder
 how to create a string?
+what is abstract class ?
+what is interface?
+what is difference between abstract class and interface?
+what is exception?
+what is the need of handling the exception?
+what is the base class of exception?
+what are the types of exception?
+what is the use of finally block?
+what is final,finally and finalize?->finalize is a method used to perform cleanup processing such as clossing a file ,closing data base connections before garbage is collected
+why we can not create object of abstract class?
+ans.If we will create an object of the abstract class and calls the method having no body(as the method is pure virtual) it will give an error.
+ That is why we can't create object of abstract class.i.e.You cannot create an instance of an abstract class because it does not have a complete implementation. 
+
+date:9/8/2022
+can we insert multiple catch block?->yes
+what is order of multiple catch block?->most specific to general
+which exception should be declared?
+ans.If a method does not handle a checked exception, the method must declare it using the throws keyword.
+
+
+difference between throw and throws?
+ans.throw is used to throw an exception explicitly.
+throws is used to declare an Exception.
+throw is followed by an instance and throws is followed by a className
+throw is used in the method and throws is used with the method signature
+using throw u can throw only one exception and using throws u can declare multiple declaration by comma separation
+
+what is custom exception?
+how to create custom exception?
+can we rethrow an exception?->yes
+try{
+}catch(Exception e){
+throw new Exception;
+}
+
+date:10/8/2022
+which is the base class of java or super class?
+what is the return type of hashCode method?
+what are the wrapper classes?
+what is autoboxing and unboxing?
+what is collection?
+what are the advantages of using collection over array?
+what is generic?
+what is difference between array and collection
+what is default capacity of arrayList
+
+
+
+
+
+
+

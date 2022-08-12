@@ -1,0 +1,155 @@
+Date:8/8/2022
+
+Exception:an abnormal condition which interrupts normal flow of program execution
+
+types of exception:
+1.error:Irrecoverable ex.StackOverflow,memoryLeackage
+
+2.checked Exception:recoverable,compiled time exception
+it is compulsory to handle otherwise u will get compile time error
+e.g.FileNotFoundException,IOException,SQLException
+
+3.unchecked exceptions:recoverable ,runtime Exception
+e.g.ArithmaticException,NullPointerException
+
+throwable is the base class of exception
+and Object is the base class of java
+
+try,catch,throw,throws,finally
+U can use multiple catch block,but at a time one exception will occur and at a time only one will execute and
+In Multiple catch block order must be from most specific to most general 
+i.e.catch for arithmaticException before the catch for Exception
+
+-try must followed by catch or finally block
+1.
+try{
+}
+catch(Exception e){
+}
+
+2.try--catch--finally
+3.try--finally
+
+finally block:
+-Finally block is used to execute imp code such as closing file,closing database connections
+- it is always executed whether you handled exception or not
+-for Each try block there can be 0 or more catch block but only one finally block
+i.e. we can insert multiple finally block
+
+when finally block will not execute?:
+->1.when error(memoryLeackage,StackOverflow) occurs 2.when we exit the program by system.exit(0)3.power failure
+
+hw:
+Read the question carefully and follow the input and output format.
+
+Write a function to find the product of the first and the third largest numbers in the given input integer array.
+
+Input and Output Format :
+First line of input corresponds to n, the size of array and next n lines correspond to the elements of the array
+
+Print "Invalid array size" when size of the array is a negative number and terminate the program
+Print "Invalid number" when there is any negative numbers available in the input array and terminate the program.
+
+Include a function named findFirstLargest(int n, int array[]) that returns an integer, product of first and third largest numbers.
+
+Sample Input 1:
+5
+11
+241
+83
+8
+2
+
+Sample Output 1:
+2651
+
+Sample Input 2:
+3
+83
+-8
+Sample Output 2:
+Invalid number
+
+
+date:9/8/2022
+throw:
+-throw will used to explicitly throw an exception
+-it is mainly used to throw custom exception
+-we can throw either checked or unchecked exception
+
+syntax:throw new ArithmaticException("");
+
+throws:
+-it is used to declare checked exception
+-it gives an information to the programmer that there may occur an exception so it is better for programmer to provide the exception handling code,
+so that normal flow can be maintain.
+
+
+Custom Exception:
+-if you are creating your own exception that is known as custom exception or user defined exception.
+-by the help of custom exception,you can have your own exception and message
+-it is used to customize the exception according to user need 
+
+example to solve:
+1.
+Read the question carefully and follow the input and output format.
+
+In a game show everybody got one coupon with some code. They need to generate a code with only even numbers in that coupon.
+ Find the answer.
+
+Input and Output Format :
+Input consists of  an integer. Output consist of an integer, which is the generated code.
+
+1) Print "Number too small" when the given input number is a negative number.
+2) Print "Number too large" when the given input number is greater than 32767.
+3) Print 0 If the coupon does not contain any even numbers.
+
+Include a function named generateCode(int coupon) whose return type is an integer, which is the generated code.
+
+Sample Input 1:
+4352
+
+Sample Output 1:
+42
+
+Sample Input 2:
+1357
+
+Sample Output 2:
+0
+
+Sample Input 3:
+-1357
+
+Sample Output 3:
+Number too small
+
+2.
+Read the question carefully and follow the input and output format.
+
+Given the cubic capacity(CC) of a bike. Write a function to return the mileage/liter for the given Cubic Capacity(CC). The mileage will be calculated as follows:
+
+if CC is between 100 and 125, mileage is 75
+if CC is between 126 and 135, mileage is 70
+if CC is between 136 and 150, mileage is 60
+if CC is between 151 and 200, mileage is 50
+if CC is between 201 and 220, mileage is 35
+
+First line of input consists of an integer that corresponds to CC of a bike. Output consist of an integer, which is the mileage.
+
+Print "Number too large" when the given input CC is greater than 220.
+Print "Number too small" when the given input CC is less than 100.
+
+Include a function named findMileage(int cc) whose return type is an integer, which is the mileage.
+
+Sample Input 1:
+1
+
+Sample Output 1:
+Number too small
+
+Sample Input 2:
+160
+
+Sample Output 2:
+50

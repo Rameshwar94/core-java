@@ -1,0 +1,109 @@
+Date:10/8/2022
+Framework:Java frameworks are bodies of reusable pre-written code acting as templates that developers can use to create applications by filling in custom code as needed.
+i.e set of libraries
+
+Disadvantages of Array:
+1.fixed size
+2.it is complex to insert/delete an element from the start of the array or from the middle of the array
+3.we need to write a code to search/sort the array elements,predefined methods are not available
+4.only homogeneous elements can store.
+
+Collection:
+it is architecture to store and manipulate the group of objects.
+
+All the classes and interfaces of collection are in java.util.*
+
+need of collection:
+1.to get dynamic data structure
+2.to get heterogeneous  data structure
+
+List:
+1.ArrayList:
+-internally uses growable array
+-it can contain duplicate elements
+-it maintains insertion order
+-non synchronized(MultiThreded)
+-Null insertion is possible
+-heterogeneous objects allowed
+-it is serializable and cloneable inteface
+-best choice for retrieval but not for manipulation because its slow
+- default the capacity of ArrayList is 10.
+public void ensureCapacity(int minCapacity); 
+new capacity=(current capacity*3/2)+1
+
+
+
+
+Iterator:
+-it provides the facility of iterating the elements in forward direction only.
+methods:
+1.public boolean hasNext();-->it returns true if iterator hs more elements
+2.public Object next();-->it returns the element and moves the cursur pointer to the next element
+3.public void remove();-->it removes the last element returned by the iterator .it is rarely used.
+
+for each loop:
+for(Type_of_object  ref :Name_of_List ){
+syso(ref);
+}
+
+
+
+hw:
+Read the question carefully and follow the input and output format.
+
+Given the basic salary as input, write a program to calculate the bonus and display it.
+
+The bonus will be calculated based on the below category.
+Basic>20000 bonus=17%of basic+1500
+Basic>15000 bonus=15%of basic+1200
+Basic>10000 bonus=12%of basic+1000
+for rest =8%of basic+500
+
+Input and Output Format :
+
+First line of input consists of n, the basic salary.
+Output is a single integer that displays the bonus.
+
+Print "Number too large" when the given input numbers is greater than 32767 .
+Print "Number too small" when the given input is a negative number.
+
+Include a function named calculateBonus(int basic) whose return type is an integer, the bonus.
+
+Sample Input 1:
+21000
+
+Sample Output 1:
+5070
+
+Sample Input 2:
+327678
+Sample Output 2:
+Number too large
+
+q.2
+Q.
+Read the question carefully and follow the input and output format.
+
+Write a program to generate new number from the given input based on following conditions.
+
+(i) Even digit should be replaced by next Even digit.
+(ii) Odd digit should be replaced with next Odd digit
+
+Input and Output Format :
+Input consists of an integer. Output is also an integer.
+
+1) Print "Number too small" when any of given input numbers is a negative number.
+2) Print "Number too large" when any of given input numbers is greater than 32767.
+
+
+Sample Input 1:
+123
+
+Sample Output 1:
+345
+
+Sample Input 2:
+32768
+
+Sample Output 2:
+Number too large

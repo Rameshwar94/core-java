@@ -3,7 +3,7 @@ package com.basic;
 import java.util.Scanner;
 
 public class Area {
-
+	
 	public static void main(String[] args) {
 		System.out.println("Enter radius:");
 		double pi=3.14;
@@ -19,6 +19,7 @@ public class Area {
 		int b=sc.nextInt();
 		double t=(b*h)/2;
 		System.out.println("Area of triangle:"+t);
+		
 		
 	}
 
