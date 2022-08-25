@@ -1,0 +1,21 @@
+date:16/8/2022
+what is collection?
+what are the advantages of using collection over array?
+what is generic?
+what is difference between array and collection/ArrayList?
+what is default capacity of arrayList?
+what is difference between arrayList and LinkedList?
+what is difference between Iterator and ListIterator?
+what is difference between arrayLiat and Vector?
+what is difference between comparable and comparator?
+what is difference between collection and collections?
+what is difference between List and Set?
+what is difference between set and map
+what is difference between hashSet and LinkedHashSet?
+what is difference between HashSet and HashMap
+what is difference between treeSet and TreeMap
+what is the use of properties file and properties Class?
+why info is not saved in class instead of properties file?
+ans.-->Recompilation is not required if stored in properties file
+what is difference between PriorityQueue and ArrayDeque?
+what is difference between HashMap and HashTable?

@@ -26,14 +26,19 @@ List:
 -Null insertion is possible
 -heterogeneous objects allowed
 -it is serializable and cloneable inteface
--best choice for retrieval but not for manipulation because its slow
+-best choice for retrieval but not for manipulation(shifting of elements) because its slow
 - default the capacity of ArrayList is 10.
 public void ensureCapacity(int minCapacity); 
 new capacity=(current capacity*3/2)+1
+-once ArrayList reaches its maximum capacity,a bigger ArrayList object is going to created,copies all elements in new arrayList and reference will refer to new list
+-ArrayList and vector implements randomAccess Interface
 
 
-
-
+****
+ArrayList provides constant time for search operation, so it is better to use ArrayList if searching is more frequent operation than add and remove operation.
+ The LinkedList provides constant time for add and remove operations. So it is better to use LinkedList for manipulation.
+****
+ 
 Iterator:
 -it provides the facility of iterating the elements in forward direction only.
 methods:
@@ -107,3 +112,166 @@ Sample Input 2:
 
 Sample Output 2:
 Number too large
+
+Date:16/08/2022
+
+LinkedList:
+-uses doubly linked list(each node in doubly linked list has three fields:previous(address of previous element),data and next(address of next element))
+-in doubly linked list previous of first element is null and next of last element is null
+-non synchronised 
+-maintain insertion order
+-contain duplicate elements
+-null insertion is possible
+-heterogeneous objects are allowed
+-implements serializable and cloneable interface
+-best choice for manipulation but slow for retrieval is slow because to access any element u have to start retrieval from fist
+
+
+ListIterator:
+-used to traverse the elements in forward and backward direction
+methods:
+hasNext();
+next();
+hasPrevious();
+previous();
+
+-if we first iterate in backward direction it will not print any element
+because cursor is at first element and it does not have previous also if cursor is at last element then it do not have next 
+therefore first understand where is the cursor or first iterate in forward direction
+and then in backward direction then will get output
+ 
+ 
+ Sorting List:
+ -we can not sort the elements of type List but Collections class methods to sorting the elements of list elements
+ -you can sort list elements only it is comparable or comparator
+ -String class and Wrapper classes implements the comparable interface so if you store the object of String or wrapper Classes ,it will be comparable
+ -If you want to user defined object you need to implement comparable or comparator interface
+
+Comparable:
+-single sorting order/natural sorting order
+-it is present in java.lang package
+-contains one abstract method,compareTo(object o);
+-Collections.sort(list);
+
+Comparator:
+-multiple sorting order
+-present in java.util package
+-contains one abstract method,compare(object o1,object o2);
+-Collections.sort(list,Comparator);
+ 
+ Vector:
+ -legacy class(present from 1st version,1.1)
+ -uses growable array
+ -Synchronized
+ -duplicates elements are allowed
+ -maintains insertion order
+ -null insertion is possible
+ -heterogeneous objects are allowed
+ -implements serializable,Cloneable and RandonAccess Interface
+ -default capacity is 10
+ new capacity=current capacity*2
+ -best choice for retrieval operation
+ 
+ Date:17/08/2022
+ Stack:
+ -child of vector
+ -it is Specially designed for LIFO
+ -it inherits all the properties of vector
+ -methods:
+ -1.Object push(object o):used to insert an object
+ 2.Object pop():used to return and remove top of the stack
+ 3.int search(object o):if the specified object is available it returns its offset from top of the stack
+ if object is not available it returns -1.offset is counted from top of stack means from last.
+ 
+ 
+ Set:
+ -unique elements,insertion order is not preserved
+ 
+ HashSet(1.2 version):
+ -uses HashTable
+ -all objects will be inserted based on hashcode of object(Hashing mechanism)
+ -heterogeneous objects are allowed
+ it implements serializable and cloneable interface
+ -best choice for search operation
+ 
+ LinkedHashset(1.4 version):
+ -it is child of HashSet
+ -internally it uses HashTable and LinkedList
+ -it maintains insertion order
+ -heterogeneous objects are allowed
+ -it implements serializable and cloneable interface
+ 
+ TreeSet:
+ -uses Balanced Tree
+ -maintains Sorted(ascending)Order
+ -heterogeneous objects are allowed
+ -it implements serializable and cloneable interface
+ -null insertion is not possible
+ 
+ Queue:
+ -implements:1.ArrayDequeue 2.LinkedList 3.PriorityQueue
+ -Obeys FIFO
+ 
+ PriorityQueue:
+ -Null insertion is not allowed
+ -allow duplicate elements
+ -but does not order the element in FIFO manner
+ 
+ Deque(I):
+ -doubly ended queue(insertion and deletion from both the ends)
+ -implemented in ArrayDeque and LinkedList Class
+ -null insertion is not allowed
+ 
+ Map(I):
+ -It is not chain interface of collection
+ -it contains values on the basis of keys i.e. key,value pair
+ -each pair is known as entry
+ -it contains only unique keys values can be duplicate
+ -it is useful if you have to search ,update or delete elements on the basis of key
+ 
+ methods of Map:
+ 1.Object put(Object key,object Value):used to insert entry in a map
+ 2.void putAll(Map map):used insert specified map
+ 3.Object remove(Object key):used to remove entry of specified key
+ 4.Object get(Object key)
+ 5.boolean containsKey(Object key)
+ 6.Set keySet():used to return a Set view containing all the keys
+ 7.Set entrySet():used to return a Set view containing all the keys and values
+ 
+ Map.Entry(I):
+ -sub interface of Map
+ -Provides methods to get keys and values
+ methods of Entry interface:
+ 1.Object getKey();
+2. Object getValue();
+
+HashMap:
+-uses HashTable
+-it contains only unique keys
+-it maintains insertion order
+-it may have one null key and multiple null value
+
+TreeMap:
+ -uses Balanced Tree
+ -contains unique elements
+ -maintains ascending order
+ -does not contain null key but can have multiple null values
+ 
+ HashTable:
+ -legacy class
+ -synchronized
+ -it is an array of list each list is known as bucket
+ -the position of bucket is identified by calling hashCode();
+ -contains only unique elements
+ -may not have any null key or value
+ 
+ Properties class:
+ -child of HashTable
+ -properties object contains key and value pair both as a String
+ -used to get property value based on the property key
+ -it is used to store information which is to be changed frequently
+ -recompilation is not required if info is changed from properties file
+ 
+ Date:18/8/2022
+ 
+ 

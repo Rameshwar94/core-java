@@ -1,0 +1,290 @@
+date:19/08/2022
+Multi-processing: process of executing multiple tasks simultaneously
+
+Multi-threading:within single process multiple threads are present.A process of executing multiple threads simultaneously is known as multiThreading
+
+What is Thread?
+-Thread is a lightweight process
+-It is a smallest unit of procession. 
+-Thread share a common memory area.
+- they don't allocate seperate memory, so they saves memory
+- It is mostly used in games and animations
+-If exception occurs in one thread, It doesn't affect others
+
+Difference between process and Thread?
+process:
+-can be reffered as program in execution
+-it has own memory
+-heavyweight
+-do not depend on each other
+
+thread:
+-part of process,lightweight subprocess
+-share same memory address
+-lightweight
+-are not independent because they share same memory space
+
+Threads are dependent on scheduling algorithms,so you can't say which thread will execute 1st
+
+Thread Scheduler:
+-it is the part of jvm that decides which thread should run
+-there is no guaratee that which thread will be choosen to run
+-scheduler mainly uses scheduling algorithms to schedule thread
+
+There are two ways to create a thread:
+1.by extending thread class(can't be used with child class because multiple inheritance is not supported in java)
+2.by implementing Runnable Interface(can be used with both parent as well as child class)
+
+
+Date:20/08/2022
+Thread Life Cycle:
+1.New/Born:a thread is in new state if you create object of thread but before the invocation of start();
+2.Ready:a thread is in ready state means it is ready for execution,but scheduler has not selected it to be the running thread
+3.Runnable :a thread is in runnable state if scheduler has selected it.and thread will start it's execution
+4.not Runnable(sleeping /waiting):This is the state when thread is alive but not eligible to execute.
+ex.if you are calling sleep(500),then thread will be in not runnable state for 500 millisec
+5.Dead:thread is in dead or terminated state when thread exits after execution of run method or by calling stop method.
+
+Synchronization:
+-Synchronization is the capability to control the access of multiple threads to any shared resources
+-it is better option when we want to allow only one thread to access the shared resource
+-there are two ways :
+1.synchronized method
+2.synchronized block
+synchronized(this){
+//...stmt
+}
+
+Priority of Thread:
+-setPriority(int priority);
+-prioriy represented no between 1-10 where 1 is min 10 is max and 5 normal priority
+-default priority is 5(normal)
+-3 constants are present in thread class:
+i.public static int MIN_PRIORITY
+ii.public static int MAX_PRIORITY
+iii.public static int NORM_PRIORITY
+
+join():it causes currently executing thread to stop executing until the thread is join completes its execution
+
+
+Date:22/08/2022:
+
+TYPES OF THREADS:
+There are two types:
+1.User Thread:
+-Thread which is created by java developer ex.main thread
+-all threads created inside main method are by default non daemon thread,because your main thread is non daemon
+
+2.Daemon Thread:
+-these are low priority background threads which provides services to user thread
+-it's life is depend on user thread thread .If no user thread is running then jvm can exit even if daemon threads are running
+-JVM doesn't wait for daemon threads to finish
+-you can change user thread to daemon thread by using setDaemon() method.
+
+INTER_THREAD COMMUNICATION/CO_OPERATION:
+-it allows synchronized thread to communicate with each other
+-it is the mechanism in which thread is paused running in it's section and another thread is allowed to enter into same section to be executed
+-it is implemented by the following methods:
+  1.wait():it causes current thread to release the lock and wait until another thread invokes notify or notifyAll method
+  2.notify():wakes up single thread that is waiting
+  3.notifyAll():wakes up all threads that are waiting
+
+
+
+
+
+
+
+
+
+
+
+
+Practice Questions:
+Q1.Read the question carefully and follow the input and output format.
+
+Given an input array, Find out the count of numbers that ends with 3.
+
+Input and Output Format :
+First line of input consists of n, the number of elements. Next n lines correspond to the array elements. Output consist of the count of numbers that ends with 3.
+
+Print "Invalid array size" when size of the array is a negative number and terminate the program
+Print "Invalid input" when there is any negative number available in the input array and terminate the program.
+
+Sample Input 1:
+5
+23
+353
+33
+12
+14
+Sample Output 1:
+3
+
+Sample Input 2:
+5
+1
+7
+3
+-8
+Sample Output  2:
+Invalid input
+
+Q2.
+Read the question carefully and follow the input and output format.
+
+Student Fees is calculated according to the student's 10th marks. The student will get discount in fees as follows :
+
+Marks discount(%)
+>90         -  50%
+81-90      - 25%
+70-80      - 10%
+<70         -  0%
+Calculate the fees according to above table.
+
+Note:
+Formula : fees - (fees* discount(%))
+Print "Invalid mark" if the mark is greater than 100
+Print "Invalid fee" if the fee is greater than 32767
+Print "Invalid input" if any of the input is negative
+
+Input and Output Format :
+First line of input represents the fee, second line of input represents the marks of student.
+
+Sample Input 1:
+10000
+95
+Sample Output 1:
+5000
+
+Sample Input 2:
+15896
+101
+Sample Output 2:
+Invalid mark
+
+
+
+Q3.
+Read the question carefully and follow the input and output format.
+
+Given an input array, find the difference b/w second largest and second smallest element in the array.
+
+Hint : There is no repetition of element in the array.
+
+Input and Output Format:
+
+First line of input consists of n, the number of elements. Next n lines correspond to the array elements.
+ Output consist of an integer, which is the difference b/w second largest and second smallest..
+
+1) Print Invalid array size when size of the array is negative and terminate the program.
+2) Print Invalid input when there is any negative numbers available in the input array and terminate the program.
+
+Include a function named secondMaxMinDiff(int[] array, int n) whose return type is an integer, which is the difference b/w second largest and second smallest.
+
+
+
+
+Q4.
+Write a program to find the product of the prime digits in the given input number.
+ 
+Include a function named productPrimeDigits that accepts an integer argument and returns an integer that corresponds to the product of the prime digits in the integer.
+The function returns -1 if the input number is negative or greater than 32767.
+ 
+If the function returns -1, print Invalid Input.
+ Please note that 1 and 0 are neiher prime nor composite.
+ 
+Input and Output Format:
+Input consists of an integer.
+Output consists of an integer.
+Refer sample output for formatting specifications.
+ 
+ 
+Sample Input 1:
+324
+ 
+ 
+Sample Output 1:
+6
+ 
+Sample Input 2:
+-67
+ 
+Sample Output 2:
+Invalid Input
+
+Q5.
+Write a program to find the second smallest of all divisors of the given number.
+ For example, the divisors of 21 are 1,3,7 and 21. The second smallest divisor is 3.
+ Include a function named secondSmallest that accepts an integer argument and returns an integer. The function 
+ returns the second smallest divisor or returns -1 
+ if it is a negative number or if it is greater than 32767.
+ If the function returns -1, print Invalid Input.
+ Input and Output Format:
+Input consists of a single integer.
+Output consists of a single integer.
+Refer sample output for formatting specifications.
+Sample Input 1:
+21
+ Sample Output 1:
+3
+ Sample Input 2:
+-241
+ Sample Output 2:
+Invalid Input
+Sample Input 3:
+50000
+ Sample Output 3:
+Invalid Input
+
+Q6.
+Write a program to find the average of the array.
+ Include a function named avgArray that accepts 2 arguments and returns a float. The first argument is the input array and the second argument is an int that corresponds to the size of the array. The function returns a float that corresponds to the average of the array.
+ If the size of the array is negative or if any element in the array is negative , print “Invalid Input” and terminate the program.
+ Input and Output Format:
+Input consists of n+1 integers. The first integer corresponds to n, the number of elements in the array. The next 'n' integers correspond to the elements in the array.
+Output consists of a floating point number that corresponds to the average. It is displayed correct to 2 decimal places.
+Assume that the maximum size of the array is 20.
+ 
+Sample Input 1:
+7
+1
+9
+8
+4
+6
+4
+5
+Sample Output 1:
+5.29
+Sample Input 2:
+-5
+Sample Output 2:
+Invalid Input
+Sample Input 3:
+5
+23
+2
+-5
+
+ Sample Output 3:
+Invalid Input
+
+Q7.
+In a game show everybody got one coupon with some code. They need to count the digits in the code and send SMS to the given number.
+ 
+Write a program to find the number of digits in the given number.
+ Include a function named countDigits that accepts an integer argument and returns an integer that corresponds to the number of digits. 
+ If the input is a negative number, the function returns -1.
+ If the function returns -1, print Invalid Input.
+Input and Output Format:
+Input consists of a single integer.
+Output consists of an integer that corresponds to the number of digits in the input.
+Sample Input 1:
+250
+Sample Output 1:
+3
+Sample Input 2:
+-2345
+Sample Output 2:
+Invalid Input

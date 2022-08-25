@@ -1,6 +1,27 @@
+what is oops?and explain principles of oops.4 major pillers of oops
+why java is platform independent?
+why pointer is not included in java?
+what are primitive data types?
+what is variable?
+what are the types of variable?
 why main method is static in java?
 can we write static public void main instead of public static void main?
 can we change return type of main method? like int/double?
+can we change variable of command line argument?
+
+what is system.out.println()?
+ans:System-Class present in java.lang.*
+out:static reference of printStream class
+println():method of printStream class
+
+can we write top-level class as private or protected?
+ans-->No, we cannot declare a top-level class as private or protected. 
+It can be either public or default ( no modifier ). 
+If it does not have a modifier, it is supposed to have a default access.
+ If a top-level class is declared as private the compiler will complain that the modifier private is not allowed here.
+
+
+
 which is better scanner or bufferReader?and Why?
 can we make a class as private or protected?-no,class may be public or default.
 
@@ -29,20 +50,42 @@ It optimizes the execution time and memory space.
 
 what is constructor?
 ans.A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created.
-A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created.
+it has same name as class name and dont have any return type.
 
 what is difference between method and constructor?
 ans.Constructor is called implicitly by system.A method is called by the programmer.
 constructor has no return type. It can or cannot return any value to the caller.method has return type
+constructor has same name as class name,but method name is user defined or inbuilt(library methods).
+constructor can't be overloaded but method overriding is possible
 
 what is method overloading?
+ans.-->Method with same name but different types of parameters and different no of parameters
 what is method overriding?
 ans .occurs when a subclass (child class) has the same method as the parent class.
 
 what is difference between overloading and method overriding?
+ans.-->1.Method overloading is performed within class.	Method overriding occurs in two classes that have IS-A (inheritance) relationship.
+       2.In java, method overloading can't be performed by changing return type of the method only.
+         Return type can be same or different in method overloading. But you must have to change the parameter.
+         Return type must be same or covariant in method overriding.
+ 	   3.In case of method overloading, parameter must be different.In case of method overriding, parameter must be same.
+ 	   4.Method overloading is the example of compile time polymorphism.Method overriding is the example of run time polymorphism.
+ 	   5.Method overloading is used to increase the readability of the program.	
+ 	   Method overriding is used to provide the specific implementation of the method that is already provided by its super class.
+ 
 what is this keyword?
+ans.-->The main purpose of using this keyword in Java is to remove the confusion between class attributes and parameters that have same names. 
+this keyword in Java is a reference variable that refers to the current object of a method or a constructor or instance variable
+
 what is this constructor?
+ans.-->The this() constructor call can be used to invoke the current class constructor. It is used to reuse the constructor.
+ In other words, it is used for constructor chaining.
+ 
 what is super keyword and super constructor?
+ans.-->The super keyword in Java is a reference variable which is used to refer immediate parent class object. 
+ super() is parent class default constructor.super() can be used to invoke immediate parent class constructor.
+super() must be at first line of child class constructor.
+
 what is difference between this and super keyword?
 what is difference between this constructor and super constructor?
 what is difference between super constructor and super keyword?
@@ -52,7 +95,8 @@ why java does not support multiple inheritance?
 what is final keyword?
 what is static keyword?
 can we use this and super keyword in static context?
-can we execute a program without main()?
+can we execute a program without main()?yes if u are using below 7 version from 7th version it is not possible using static blocks
+ 
 
 
 
@@ -106,11 +150,7 @@ which is the base class of java or super class?
 what is the return type of hashCode method?
 what are the wrapper classes?
 what is autoboxing and unboxing?
-what is collection?
-what are the advantages of using collection over array?
-what is generic?
-what is difference between array and collection
-what is default capacity of arrayList
+
 
 
 

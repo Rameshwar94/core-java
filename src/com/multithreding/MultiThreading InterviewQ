@@ -1,0 +1,40 @@
+what is multi-processing
+what is multi-threading
+what is thread
+what is diff between process and thread
+can we start thread twice?
+ans.-->no.you will get IllegalThraedStateException
+can we set a priority of thread?
+Explain thread life cycle
+what is synchronization?
+what is the use of task Scheduler?
+what is the use of join method?
+how to create a thread?
+Thread VS Runnable? Which is best approach to create the Thread?-->Runnable
+What are the types of the Thread?-->User(Thread inside main method), demon Thread(BG, Supporting task(eg. Garbage Thread))
+What will happen if We pass other than 1 to 10 priority?-->will occur IllegalArgumentException will
+Can we change main thread into Deamon thread?-->Yes. using setDaemon(true)
+what is inter thread communication/co-operation?
+what is diff between notify and notyfyAll() method?
+
+what is difference between sleep and wait method?
+
+Ans:-->sleep and wait method
+ 
+ sleep:
+ - present in Thread class
+ - static method
+ - after specific amount of time sleep is completed
+ - doesn't release the lock
+ 
+ wait:
+ - present in Object class
+ - non-static method
+ - should be notified by notify() or notifyAll()
+ - releases the lock
+
+why wait, notify and notifyAll present in object class not in thread class?-->Coz it related to lock and Object has lock
+
+What is DeadLock?-->When Thread is waiting for an object lock that is acquired by another thread and second thread is an waiting for object lock that is acquired by first thread.
+Both threads are waiting for each other to release the lock .and this condition is known as dead lock.
+

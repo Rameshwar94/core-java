@@ -1,0 +1,170 @@
+date:18/08/2022
+
+Types of files:
+  1.Byte /Stream oriented:
+  can read /write byte as well as char oriented data
+    read => FileInputStream
+    write => FileOutStream
+
+  2.Character Oriented:
+  can read only char oriented data
+    read => FileReader
+    write => FileReader
+
+java.io.*;
+Stream:
+-sequence of data and it is composed of bytes
+-In java 3 Streams are created for us automatically:
+1.System.out  2.System.in  3.System.err
+
+InputStream:it is used to read from a source
+OutputStream: it is used to write data to destination
+
+Classes for byte oriented file:
+1.OutputStream Class:
+-it is an abstract class
+-it is super class of all the classes representing in outputStream of byte
+methods:
+1.public void write(int) throws IOException:used to write a byte int,char or ascii of char
+A-67,a-97 ascii
+2.public void write(byte[])throws IOException
+3.public void flush() throws IOException
+4.public void close() throws IOException
+
+2.InputStream Class:
+-it is an abstract class
+-super class of all the classes representing an input stream of byte
+methods:
+1.public abstract int read()throws IOException:it will return ascii and reads next byte of data and returns -1 at the end of the file
+2.public int available()throws IOException:will check next byte is present or not if present it return that byte
+3.public void close()throws IOException
+
+Date:19/08/2022
+Serialization:
+-is mechanism of writing a state of an object into a byte stream
+-it is mainly used to travel object's state on the network(known as Marshaling)
+-reverse operation of serialization is called Deserialization
+
+java.io.Serializable Interface:
+-it is marker Interface(has no data members and methods)
+-it is used to mark java classes so that objects of these classes may get certain capability
+-it must be implemented by the class whose object you want to persist(store)
+-String class and all the wrapper classes implements serializable interface by default
+
+ObjectOutputSream Class:
+-it is used to write primitive data  type and java object to an outputStream
+-only object that support serializable interface can be return to stream
+methods:
+1.public final void writeObject(object obj)throw IOException:used to write the specified boj to the byte sream
+2.public void flush()throw IOException
+3.public void close()throw IOException
+
+
+Deserialization:
+-it is the process of reconstructing object from the serialized state
+ObjectInputStream class:
+-it deserializes object and primitive data written using ObjectOutput stream
+methods:
+1.public final Object readObject()throws IOException,ClassNotFoundException:read object from the byte stream
+2.public void flush()throw IOException
+3.public void close()throw IOException
+
+
+
+q:
+Read the question carefully and follow the input and output format.
+
+Given an input array which contains age of some employees, write a program to find the sum of ages of employees greater than 18.
+
+Input and Output Format :
+First line of input consists of n, the number of elements. Next n lines correspond to the array elements. Output consist of an integer, which is the sum.
+
+1) Print "Invalid array size" when size of the array is a negative number and terminate the program.
+2) Print "Invalid input" when there is any negative number available in the input array and terminate the program.
+
+Include a function named newArraySum(int age[],int size) whose return type is an integer, which is the sum.
+
+Sample Input 1:
+5
+21
+22
+17
+10
+25
+Sample Output 1:
+68
+
+Sample Input 2:
+6
+50
+-36
+
+Sample Output 2:
+Invalid input
+
+
+q2:
+Write a program to find if the student is eligible for first, second or third grade universities by finding the average of their marks given in the input integer array.
+If the size of the array is negative or if any element in the array is negative or if the average marks scored by the student is greater than 99 , print “Invalid Input” and terminate the program.
+ Input and Output Format:
+Input consists of n+1 integers. The first integer corresponds to n, the number of elements in the array. The next 'n' integers correspond to the elements in the array.
+Output consists of a string --- “First Grade University” or “Second Grade University” or “Third Grade University” or “Invalid Input”.
+Assume that the maximum size of the array is 20.
+Sample Input 1:
+5
+92
+87
+78
+74
+80
+ 
+Sample Output 1:
+First Grade University
+ Sample Input 2:
+-5
+Sample Output 2:
+Invalid Input
+Sample Input 3:
+5
+23
+2
+-5
+ Sample Output 3:
+Invalid Input
+
+q3:
+Q.3
+Jim got his salary. His salary calculations are as follows.
+From his Basic amount he gets 50% of his basic for house Rent allowances and 75% of his basic as special allowances . 
+If the number of days he worked is 31 he gets 500 extra. Write a program to calculate his gross salary after calculating all his salary split up.
+ 
+Include a function named calculateGross that accepts 2 integer arguments and returns a float. 
+The first integer corresponds to Jim's basic salary and the second integer corresponds to the number of days Jim has worked. 
+The function returns a float that corresponds to the gross salary.
+
+ Print Invalid Input and terminate the program in the following cases:
+1.       Basic salary is greater than 10000
+2.       Number of working days is greater than 31
+3.       Basic salary is negative
+4.       Number of working days is 0 or negative
+Input and Output Format:
+Input consists of 2 integers. The first integer corresponds to Jim's basic salary and the second integer corresponds to the number of days he has worked.
+Output consists of a single float that corresponds to Jim's gross salary. The gross salary is displayed correct to 2 decimal places.
+ Sample Input 1:
+5000
+30
+ Sample Output 1:
+11250 .00
+ Sample Input 2:
+5000
+0
+Sample Output 2:
+Invalid Input
+
+
+
+
+
+
+
+

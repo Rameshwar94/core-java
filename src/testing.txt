@@ -1,0 +1,52 @@
+Software Testing:
+-to Avoid failure
+-we need to identify fault ,means process of discovering the causes of failure
+-process of ensuring that the failure does not happen again is called fault correction or fault removal
+-to test our programming we will use Unit Testing framework.
+
+What is JUnit?
+- JUnit is standard unit testing framework is known as JUnit.
+- It is an open source framework
+- programmer can create test cases and test his/her own code
+- to perform unit testing we need to create test cases
+- unit test is a code which ensure that the program logic works as expected
+- current version is JUnit 4
+
+Feature of JUnit:
+- IT is a framework which is used for writing and running test cases
+-provides annotations to identify test method
+-provides assertion for testing expected reason
+-provides test Runners for running tests
+-it allows you to write code faster which increases quality
+-it is elegantly simple,less complex and takes less time
+-JUnit test can run automatically and they check their own results and provides immediate feedback
+-JUnit test can be categorized into test suites containing test cases and even other test suites
+-It shows test progress in a bar that is green if test is running smoothly,it turns red when a test fails
+
+What is Unit Test Case:
+-a unit test case is a part of code which ensures that another part of code(method) works as expected
+-to achieve a desired result quickly,a test framework is required and JUnit is perfect test framework for java
+-a formal written a unit test case is characterized by a known input and expected output
+-there must be atleast 2 unit test cases,one +ve test case nd one -ve test case.
+
+download JUnit 4 
+
+Date:25/08/2022
+Assert Class:
+-All Assertion methods are present in assert class
+-Assert class provides a set of assertion methods,useful for writing test case
+
+Methods:
+1.void assertEquals(boolean expected,boolean actual)
+2.void assertTrue(boolean condition)
+3.void assertFalse(boolean condition)
+4.void assertNoNull(Object obj):check that an object is not null
+5.void assertNull(Object obj):check that an object is null
+6.void assertSame(obj1,obj2):tests if two object references point to the same object
+7.void ssertNotSame(obj1,obj2):test if two object references do not point to the same object
+8.void asertArrayEquals(expected array,actual array)
+
+
+practice que:
+1.Write +ve and -ve test case to check  a method checkAge() age>=18,true
+2.write +ve and -ve test case to check  login(),usernme="admin",password="admin123"
