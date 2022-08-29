@@ -50,3 +50,24 @@ Methods:
 practice que:
 1.Write +ve and -ve test case to check  a method checkAge() age>=18,true
 2.write +ve and -ve test case to check  login(),usernme="admin",password="admin123"
+
+Annotation:
+-describes functionality in which you can add your code and apply that in a method or a class
+-JUnit annotations provides the following information about the test methods:
+	1.which methods are going to run before and after test methods
+	2.which methods run before and after all the methods
+	3.which methods or classes will be ignored during the execution
+	
+	
+1.@Test: it tells JUnit that public void method to which it is attached can be run as a test case
+2.@Before: 	annoatating the method with @Before causes that method to be run before the test method
+3.@After: annoatating the method with @After causes that method to be run after the test method
+4.@BeforeClass: annoatating the method with @BeforeClass causes it to be run once before any o the Test method in the class
+5.@AfterClass: This will perform the method after all tests have finish.this can be used for cleanup activity.
+6.@Ingnor:It is used to ignore the test and that test will not be executed
+Note:@beforeClass and @afterClass methods should be static
+
+
+
+
+

@@ -1,0 +1,86 @@
+Date:26/08/2022
+
+Parallel Array Sorting:
+-java provide a method which is used to solve array elements parallel
+-this method has added to java.util.Arrays class,method is parallelSort() which provides sorting of array parallel
+-this method is overloaded for all the primitive data types and comparable object
+
+Optional class:
+-it is final class and used to deal with NullPointerException in java
+-it provides methods which are used to check the presence of values for particular variable
+
+
+Lambda Expression(method/function/Anonymous method):
+-it can be used when u don't want to reuse method,u want to use that method only once.
+-It is Anonymous Function that does have a name and does not belong to any class
+-it means it is function without method declaration i.e. access modifier,return type,and method name
+-it is useful in places where a method is being used only one and method definition is short
+-it allows you to write a method in the same place you are going to use it
+-it saves  your effort of declaring and writing a separate method to the containing class
+-if you want to use lambda expression u need functional interface to bind lambda with object because java is object oriented language it does not support only functions
+-in java ,lambda expression are represented as object and they must be bound to particular object type known as Functional Interface
+
+Functional Interface:
+-It is an Interface which contains only one abstract method Ex.Runnable ,comparator,comparable(these contains only one abstract method)
+
+syntax for lambda:
+	(arguments)->(body)
+	ex.(a,b)->a+b;
+	(String str)->syso(str);
+	
+Rules for lambda:	
+	1.It can have 0,1 or more parameters
+	2.type of parameter can be explicitly declared or it can be inferred from the context
+	ex.(int a) is same as(a)
+	3.when there is single parameter it is not mandatory to use parenthesis
+	ex.a->a*a;
+	4.Body of lambda expression can contain one or more statement
+	5.if body of lambda expression has single statement curly brackets are not mandatory
+	
+forEach method:
+objOfCollection.forEach(lambda);
+	-consumer is inbuilt interface .to implement it we need lambda expression in forEach method
+	
+implementation of comparator interface using lambda:
+we can pass lambda expression in sort method	i.e.Collections.sort(list,lambdaExpression)
+comparator has only one abstract method :compare method
+and string is already comparable so we can use compareTo method for sorting of String parameters
+	
+practice Q:
+these questions solved in Square class file in java8features package.
+1.create a functional interface with a method square(int n) and implement the lambda expression
+2.create a functional interface with a method circle(float r)and implement the  lambda expression
+3.create a functional interface with a method simpleInterest(float p,float n, float r)and implement lambda expression
+4.create a functional interface with a method percentage(double m1 ,double m2, double m3)and implement lambda expression
+	
+Date:29/08/2022
+Stream API:
+-Stream is used to process collection of object
+-Sequence of object that supports various methods that can be pipelined to produce the desired result
+-if we want to represent the group of objects as a single entity then we should go for collection.
+But if we want to process object from the collection then we should go for Stream.
+ 
+ How to create Stream?
+ -create a stream
+ -perform intermediate operations on the initial stream.there can be more than 1 intermediate operations
+ -perform terminal operations
+
+predicate is inbuilt functional interface.
+
+-Stream is not a data structure instead it takes input from collection,array etc. i.e.it do not store any data
+-Stream do not change the original data structure ,they only provide the result as per pipeline methods
+-Each intermediate operations is lazily executed and returns a stream as a result,hence various intermediate operations can be pipelined	
+-terminal operations mark the end of the stream and returns the result.
+lazily executed:if we get result at some specific iterations so it will not iterate for remaining iterations
+
+Parallel execution of operations using stream is faster than sequential execution of operation
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
