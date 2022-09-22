@@ -1,0 +1,116 @@
+Date:6/9/2022
+Database:
+-it is an organized collection of related information
+-you can store data in the form of table
+-databases support storage and manipulation 
+
+DBMS:
+ACID properties:
+Types of DBMS:
+
+
+SQL:structured Query Language
+MySQL :database language for dealing with relational database
+
+Data Type:
+1.Numeric Data Type:
+	i.tinyint-1byte space and can store 4 digit no
+	ii.smallint-2byte space and can store 5 digit no
+	iii.midiumint-3byte space and can store 9 digit no
+	iv.int-4byte-11digits
+	v.bigint-8byte-20digit
+	vi.float(m,d) 2byte 24digits ex.price float(10,2);-->10237898.65(10 digit and last two are precision )
+	vii.double(m,d) 8byte  53places
+	viii.decimal(m,d)  each decimal value corresponds to 1byte
+	bit
+	bool/boolean
+	
+2.Date and Time:
+ 	year     1byte    2/4digit
+ 	date     3byte    yyyy-MM-dd pattern
+ 	time     3byte    HH:mm:ss
+ 	datetime 5byte    yyyy-MM-dd HH:mm:ss
+ 	timestamp 4byte+fractional seconds  yyyy-MM-dd HH:mm:ss with timeStamp
+	
+3.String:
+	char
+	varchar(size)     max size:255char
+	tinytext(size)	   max size:255char
+	text(size)       Maximum size of 65,535 characters.
+	mediumtext(size)   It can have a maximum size of 16,777,215 characters.
+	longtext(size)     It can have a maximum size of 4GB or 4,294,967,295 characters.
+	binary             max size:255char
+	varbinary          max size:255char
+	
+4.BLOB(binary large object)
+	tinyblob    255byte
+	blob        65535bytes
+	mediumblob    1,67,77,215 bytes
+	longblob    4gb
+	
+	SQL commands:
+	1.DDl-data definition language-alter,create,truncate,rename,drop
+	-it is related to structure of table
+	2.DML-data manipulation language-insert,update,delete
+	3.DRL-data retrieval language-select
+	4.TCL-Transaction control language-commit,Rollback,savepoint
+	5.DCL-data controlled language-grant,revoke
+	
+	truncate:used to delete all the records from the table
+	drop:used to delete entire table means structure also will delete
+	
+	Why is truncate a DDL command?
+
+Then why truncate is a DDL command since it is acting on data,
+ ideally it should also be under DML. 
+ This has been most asked in interviews.
+ It is because when we apply truncate internally it drops the table first then re-creates the schema/structure of that table.
+	
+	
+	
+	
+	
+	
+	
+	
+Question:
+1.Read the question carefully and follow the input and output format.
+
+Given input as integer array in which consecutive elements should have a difference of 4 or more than 4.
+
+If the above condition matches display “1” else “0”
+
+Input and Output Format :
+First line of input consists of n, the number of elements. Next n lines correspond to the array elements. 
+Output consist of an integer, which is the either 1 or 0
+
+1) Print "Invalid array size" when size of the array is a negative number and terminate the program.
+2) Print "Invalid input" when there is any negative numbers available in the input array and terminate the program.
+
+Sample Input 1:
+6
+1
+5
+10
+6
+2
+7
+
+Sample Output 1:
+1
+
+Sample Input 2:
+-8
+
+Sample Output 2:
+Invalid array size
+
+	
+	
+	
+	
+	
+	
+	
+	
+	

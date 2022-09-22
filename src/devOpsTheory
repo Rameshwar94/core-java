@@ -1,0 +1,12 @@
+DevOps:
+-it is combination of development and operations.
+- This allows a single team to handle the entire the application life cycle from development to testing, deployment and operation.
+- It is a set of practices intended to reduce the time between committing the changes to a system and changes being placed into normal production while ensuring high qualities.
+- It help you to reduce the disconnection between software developers, QA(Quality Assurance) engineers and system administrator.
+- With the help of devops quality and speed of the application delivery has improved to a great extent.
+
+Agile Methodology:
+-agile is collection of principles used in software development and project management.
+-it focuses on enabling teams to deliver work in small workable increments.Thus delivering value to their customer with ease.
+-evaluation of the requirement plans and results take place continuously.
+-this helps the team in responding to changes in quick manner.

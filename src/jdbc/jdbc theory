@@ -1,0 +1,66 @@
+steps to add referenced library:
+right click on ur project->build path->configure build path->add external jar->go to c drive->program files(x86)->mysql->connector j 8.0->
+mysql-connector j8.0->apply->apply and close
+
+steps to connect java with database:
+1.import java .sql.*package
+
+2.register driver(in mysql 8 version it is not required we can omit that step)
+class.forName("driver_name");
+
+3.Establish connection
+Connection con =DriverManager.getConnection(url,username,password);
+
+4.create a Statement
+Statement stmt=con.createStatement();
+
+5.Execute statement
+ResultSet rs=stmt.executeQuery("select * from customer")
+
+6.retrieve result
+while(rs.next()){
+//....
+
+7.close connection
+con.close();
+}
+
+
+PreparedStatement:
+PreparedStatement("insert into customer value(?,?,?,?)")
+
+Statement:
+-used when query is to be executed only once.
+-it is base interface.
+-it is used to execute normal sql query.
+-we can't use Statement for reading and writing binary data means video and images
+-performance is very low
+
+PreparedStatement:
+-used when queries is to be executed multiple times
+-sub interface of Statement
+-used to execute dynamic sql query
+-we can use preparedStatement for reading and writing binary data
+-performance is better than Statement
+
+CallableStatement:used to call stored procedure.
+
+
+BLOB/CLOB
+binary large object/character large object
+clob is not supported in mysql it is supported by oracle instead of this use text data type
+BLOB:datatype:used to store binary files ex.images,videos
+CLOB:datatype:used to store text files
+
+practice Q:
+Student Management System
+Student:rollNo,name,dob,percent,address,email-id,phone_no add constraints
+1.add student record(use stored procedure)
+2.view all student
+3.view student by city
+4.update student by rollno
+5.delete student by rollno
+6.search students based on percentage 
+enter min and max range from user
+7.display details of 1st ranker
+8.search student details by rollno

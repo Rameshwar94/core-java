@@ -1,0 +1,12 @@
+what is the use of JDBC?
+Steps to create connection between java and database
+what are the different types of JDBC drivers are available?
+what is difference between statement and prepared statement
+what is the use of CallableStatement
+which method is used to establish connection between java and database
+what are the benefits of prepared statement over statement
+what is difference between executeQuery(),executeUpdate() and execute() method
+what are the types of statements.->3 types
+what is use of ResultSet
+how can we execute stored Procedure using CallableSatement
+what is difference between BLOB and CLOB

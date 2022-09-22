@@ -38,3 +38,5 @@ why wait, notify and notifyAll present in object class not in thread class?-->Co
 What is DeadLock?-->When Thread is waiting for an object lock that is acquired by another thread and second thread is an waiting for object lock that is acquired by first thread.
 Both threads are waiting for each other to release the lock .and this condition is known as dead lock.
 
+what is garbage collector?
+How to call garbage collector explicitly?-->System.gc();  or Runtime.gc();

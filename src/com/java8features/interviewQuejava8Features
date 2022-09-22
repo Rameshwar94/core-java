@@ -1,0 +1,15 @@
+what are the new features introduced in java 8?
+what is lambda expression?
+what is functional interface?
+how lambda expression and functional interface are related?
+can you create your own functional interface?
+what is method reference in java?
+what is optional?how and why can you use it?
+what is stream?
+what is diff between Collection and stream?
+what is diff between intermediate and terminal operationas in stream?
+ans-->intermediate:lazy in nature,
+terminal:not lazy they are executed soon as encounterd
+All intermediate operations returns stream as it just transform stream into another,terminal operation don't?
+filter()is intermediate operation and count() is terminal operation?
+what are the issues of Old Date/time API?

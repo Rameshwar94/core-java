@@ -1,0 +1,120 @@
+Date:01/09/2022
+Creational Design Patterns:
+1.Factory Pattern:
+-creates object without exposing the instantiation logic to the client
+-refers to the newly created object using common interface
+
+2.Singleton Pattern:
+-ensure that only one instance of a class is created 
+-provide global point of access to the object
+-by using getInstance method
+-implementation involves a static member in the singleton class, a private constructor and static public method that returns reference  to the static member
+
+3.Prototype pattern:
+
+
+Structural Design Patterns:
+1.Decorator Design Pattern:
+-the intent of this pattern is to add additional responsibilities dynamically to an object 
+2.facade Design:
+
+Behavioural Design patterns:
+1.Iterator:
+
+
+
+2.Chain of Responsibility pattern:
+-we can say that each receiver contains reference of another receiver
+-if one object can not handle the request then it passes the same to the receiver and so on.
+
+
+J2EE Design Pattern:
+there are 3 types:
+1.Presentation Layer:
+	a.Intercepting Filter Layer
+	b.Front Controller 
+2.business Layer
+	a.Business Delegate
+	b.Transfer Object
+3.Integration layer
+	a.Data Access Object(DAO)
+			
+
+
+
+
+
+
+practice Q:
+1.firstMiddleSame
+Read the question carefully and follow the input and output format.
+
+Write a program to check if the first and middle element in an array is the same, if so display “100” in output or else display the first element of the array.
+
+Note: Array size is always odd.
+
+Input and Output Format :
+The first line of the input consists of an integer, n that corresponds to the number of elements in the array.
+The next 'n' lines correspond to the elements in the array.
+
+1) Print "Invalid array size" when size of the array is a negative number and terminate the program.
+2) Print "Invalid input" when there is any negative numbers available in the input array and terminate the program.
+3) Print "Size must be odd" when the size of the array is even.
+
+Sample Input 1:
+7
+8
+4
+5
+8
+3
+2
+1
+
+Sample Output 1:
+100
+
+Sample Input 2:
+10
+4
+5
+6
+-8
+
+Sample Output 2:
+Invalid input
+
+Sample Input 3:
+3
+4
+8
+6
+
+Sample Output 3:
+4
+ 
+ Q.2
+ Q.
+Read the question carefully and follow the input and output format.
+
+Given a number n, count the occurences of a number,x in n.
+
+Input and Output Format :
+The first line of the input consists of an integer n, the second line consists of an integer, which is the digit whose occurence is to be calculated. 
+Output is an integer that gives the count.
+
+Print "Number too small" if any of the 2 input numbers is less than 0 and terminate the program.
+Print "Number too large" if any of the 2 input numbers is greater than 32767 and terminate the program.
+
+Sample Input 1:
+1122
+1
+Sample Output 1:
+2
+
+
+Sample Input 2:
+-2134
+Sample Output 2:
+Number too small
+ 
