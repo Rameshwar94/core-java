@@ -10,3 +10,66 @@ Agile Methodology:
 -it focuses on enabling teams to deliver work in small workable increments.Thus delivering value to their customer with ease.
 -evaluation of the requirement plans and results take place continuously.
 -this helps the team in responding to changes in quick manner.
+
+GitHub:
+-it is a platform for code hosting.Supports version controlling and collaborations and allows developers to work together on pocket.
+-it offers distribution version control and source code management functionality of git.
+-it also facilitate collaboration features such as bug tracking,feature request,task management for every project
+
+Advantages of Git:
+-it is easy to Contribute to open source project via GitHub
+-you can attract the recruiter by showing off your work
+-helps to create an excellent document
+-it allows your work to get out there in front of public
+-you can track changes in your code across versions
+
+GitHub Repository:
+-Repositories are data structure used by GitHub to store metadata for files and directories.
+-it encloses the collection of the files as well as the history of changes made to those files.
+-generally,repository is considered a project folder.
+-A single project can have more than 1 repository
+
+git commands:
+1.git init:create a new blank repository
+-it is used to make existing project as git project
+
+2.git add
+-used to add file content to the staging area
+-this command update the current content of the working tree to the staging area.
+-it also prepares the staged content for next commit.
+-every time we add or update any file in our project ,it is required to forward updates from the staging area to the repository
+
+3.git commit:
+-used to record the changes in repository
+-it is next command after git add
+-when we add file in git,it will take place in the staing area.
+-A commit command is used to fetch updates from the staging area to the repository
+-staging and committing are Co-related to each other.
+git commit
+
+4.git clone:
+-it is used to make a local copy of a remote repository
+-it accesses the repository through a remote URL
+git clone repository url
+
+5.git stash:
+-Somtimes u want to switch the branches but u are working on incomplete part of project.you dont want to make commit of half done work.
+-git stashing allows u to do so
+-this command enables u to switch branches without committing current branch
+git stash
+
+6.git ignore:
+-ignore is used to specify intentionally untracked files that git should ignore
+-sometimes you dont want to send files to github ,we can specify files in git to ignore
+
+7.git status:
+-you can check status after executing any git command
+
+
+
+
+
+
+
+
+
