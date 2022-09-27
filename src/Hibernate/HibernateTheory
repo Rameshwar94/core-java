@@ -1,0 +1,83 @@
+Hibernate:
+-Hibernate is high performance object/relational persistance and query services.
+-it is open source and free to download
+-hibernate not only take care of mapping from java classes t database tables and from java datatype to sql database but also provides database query and retrieval facility
+-it is lightweight,ORM(object relational mapping)tool.
+-ORM tool specifies the data creation,data manipulation and data access
+-it internally uses the jdbc API to intract with the database
+
+Advantages:
+1.it is lightweight and open Source.
+
+2.fast performance
+-performance is fast because cache is internally use in hibernate.
+-there are 2 types of cache,1st level cache and 2nd level cache
+-1st level cache is enabled by default
+
+3.Database independent query
+-hibernate uses HQL(hibernate query language),it is object oriented version sql.
+-it generate database independent queries,so u dont need to write database specific queries
+-before hibernate if database is changed for the project we need to change the sql query as well that leads to maintenance problem
+
+4.Automatic table creation
+-it provides facility to create tables automatically
+
+5.Simplifies complex join
+-to fetch data from multiple tables is easy in hibernate
+
+6.provides Query statistic and database support
+-it supports query cache and provides statistic about query and database query
+
+Hibernate Architecture:
+there are foure layers:1.java application layer 2.hibernate framework layer 3. backend api layer 4.database layer
+
+Elements of hibernate Architecture:
+1.SessionFactory:
+-it is a factory of session and client of connection provider.
+-it holds 2nd level(optional) of data
+-org.hibernate.SessionFactory interface provides factory to get the object of session.
+methods:
+save(),delete(),get(),load().
+
+2.Session:
+-it provides interface between java application and data stored in the database
+-it wraps the jdbc connection and it is factory of Transaction ,Query and Criteria 
+-it holds 1st level cache (mandatory) of data.
+-it provides methods :insert,update and delete the object
+
+3.Transaction:
+-it provides methods for transaction management
+
+4.connection provider:
+-it is factory of jdbc connections 
+-it abstracts the application from driverManager
+
+-maven need internet connection(to access pom.xml file)
+
+create table :
+1.using annotations
+2.using mapping files
+
+files:
+hibernate.cfg.xml  :configuration file,location must be src folder
+
+dialect:
+
+POJO classes:it is also known as bean/model class which can contain properties,constructor,getter/setters methods like entity class
+and not extended from any class and interface in this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
